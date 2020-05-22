@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .card {
+        border: 1px solid white;
+      }
+      .card-title-cases {
+        padding-top: 15px;
+        height: 50px;
+        color: white;
+        border-radius: 15px;
+      }
+      .card-text-Cases {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <a class="navbar-brand" href="#">COVID Doctor</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#data-update">Corona Updates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#card-grouping">Pulse Analyzer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#card-grouping">Xray Scanner</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div style="background-color: #dc3545;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img
+              height="500px"
+              width="600px"
+              src="../static/images/covid-19-doctor-sent-me-a-message.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div style="color: white; text-align: center;" class="col">
+            <h1 style="margin-top: 130px;" class="display-3">Covid</h1>
+            <h1 style="margin-left: 140px;" class="display-3">Doctor</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="card-grouping" style="text-align: center; margin-top: 60px;">
+        <img src="https://img.icons8.com/color/100/000000/services.png" />
+        <h1 class="display-5">Services Offered</h1>
+      </div>
+      <div style="margin-top: 70px;" class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            height="250px"
+            src="../static/images/covid-19-doctors-on-the-distance.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pulse Scanning</h5>
+            <p class="card-text">
+              Get your pulse count in order to verify and be cautious
+            </p>
+            <p class="card-text">
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#pulseScanner">
+                Start Scan
+              </button>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            height="250px"
+            class="card-img-top"
+            src="../static/images/covid-19-doctor-appointment.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Xray Scanner</h5>
+            <p class="card-text">
+              Scan your X ray to verify whether you are coronavirus positive or
+              not
+            </p>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#uploadXray">
+                  Upload
+                </button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#analyzeXray" onclick="analyze()">
+                  Analyze
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            height="250px"
+            src="../static/images/vector-collages-earth-and-moon.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Patients Count</h5>
+            <p class="card-text">
+              Regularly updated data regarding the virus case counts
+            </p>
+            <p class="card-text">
+              <a href="#data-update"><button type="button" class="btn btn-warning btn-block">
+                Latest Update
+              </button></a>
+              
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" height="250px" src="../static/images/hugo-chatbot.png"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Live help by ChatBot</h5>
+            <p class="card-text">
+             Get your questions answered here
+            </p>
+            <br>
+            <p class="card-text">
+              <a href="https://chatbot.hellotars.com/conv/41kIdJ/"></a>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#pulseScanner">
+                Let's Chat
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="data-update" style="text-align: center; margin-top: 60px;">
+        <img src="https://img.icons8.com/plasticine/100/000000/counter.png" />
+        <h1 class="display-5">Cases Count</h1>
+        <div style="margin-top: 70px;" class="card-deck">
+          <div  class="card">
+            <div class="card-body">
+              <div style="border:3px solid #e0a800;border-radius:19px ">
+              
+              <h5 class="card-title-cases" style="background-color: #e0a800;">
+                Total Cases
+              </h5>
+              <p class="card-text-cases">
+                <h1 class="display-4">{{ data['cases'] }}</h1>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="border:3px solid #218838;border-radius:19px ">
+              <h5 class="card-title-cases" style="background-color: #218838;">
+                Total Recovered
+              </h5>
+              <p class="card-text-cases">
+                <h1 class="display-4">{{ data['recovered'] }}</h1>
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="border:3px solid #c82333;border-radius:19px ">
+              <h5 class="card-title-cases" style="background-color: #c82333;">
+                Total Deaths
+              </h5>
+              <p class="card-text-cases">
+                <h1 class="display-4">{{ data['deaths'] }}</h1>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 70px;" class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <div style="border:3px solid #e0a800;border-radius:19px ">
+              <h5 class="card-title-cases" style="background-color: #e0a800;">
+                Today Cases
+              </h5>
+              <p class="card-text-cases">
+                <h1 class="display-4">{{ data['todayCases'] }}</h1>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="border:3px solid #218838;border-radius:19px ">
+              <h5 class="card-title-cases" style="background-color: #218838;">
+                Active
+              </h5>
+              <p class="card-text-cases">
+                <h1 class="display-4">{{ data['active'] }}</h1>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="border:3px solid #c82333;border-radius:19px ">
+              <h5 class="card-title-cases" style="background-color: #c82333;">
+                Today Death
+              </h5>
+              <p class="card-text-cases">
+                <h1 class="display-4">{{ data['todayDeaths'] }}</h1>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:100px;height:100px;background-color:#c82333 ;">
+    </div>
+    <div class="modal fade" id="pulseScanner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Pulse Scanner</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1 style="text-align: center;"><img src="https://img.icons8.com/color/48/000000/keyboard.png" /></h1>
+            <h5>Press the following buttons accordingly</h5>
+            <ul>
+              <li>Press C to change Camera</li>
+              <li>Press S to Start or Restart</li>
+              <li>Press Esc to quit</li>
+              <li>Press D to toggle plot</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="/detect"><button type="button" class="btn btn-primary">Start</button></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="modal fade" id="uploadXray" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Upload</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+<input id="file-input" class="custom-file-input" type="file" name="file" accept="image/*" onchange="showPicked(this)" />
+<label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+        </div>
+        
+        <!-- <button data-aos="flip-right" style="color: white;" type="button" class="btn btn-primary btn-lg btn-block"
+          onclick="showPicker()">
+          Upload Image
+        </button> -->
+        <div class="upload-label">
+          <label id="upload-label">No file chosen</label>
+        </div>
+        <div class="text-center">
+          <img id="image-picked" class="no-display" alt="Chosen Image" height="180" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="analyzeXray" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Result</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="success">
+<h1 style="text-align: center;"><img src="https://img.icons8.com/color/70/000000/happy--v1.png" /></h1>
+
+<div class="alert alert-success" role="alert">
+  Your test is negative !!
+</div>
+<h5>But do follow these steps of Precautions</h5>
+<ul>
+  <li><img src="https://img.icons8.com/color/48/000000/high-five.png" /> - Wash your hand for 20 sec</li>
+  <li><img src="https://img.icons8.com/color/48/000000/patient-oxygen-mask.png" /> - Wear masks</li>
+  <li><img src="https://img.icons8.com/color/48/000000/soap-dispenser.png" /> - Carry sanitizer Everywhere</li>
+</ul>
+        </div>
+        <div id="fail">
+          <h1 style="text-align: center;"><img src="https://img.icons8.com/color/70/000000/sad--v1.png" /></h1>
+          
+          <div class="alert alert-danger" role="alert">
+            Your test is Postive !!
+          </div>
+          <h5><img src="https://img.icons8.com/doodle/30/000000/doctor-male.png" />Consult a doctor asap</h5>
+          <ul>
+            <li>Dr. ABC : +91 8845234100</li>
+            <li>Dr. XYZ : +91 9988372841</li>
+          </ul>
+          <h5><img src="https://img.icons8.com/dusk/30/000000/hospital.png" />Visit any hospital</h5>
+          <ul>
+            <li>City Hospital</li>
+            <li>Max Hospital</li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- <button><a href="/detect">New model</a></button>
+    <input
+      id="file-input"
+      class="no-display"
+      type="file"
+      name="file"
+      accept="image/*"
+      onchange="showPicked(this)"
+    />
+    <button
+      data-aos="flip-right"
+      style="color: white;"
+      type="button"
+      class="btn btn-primary btn-lg btn-block"
+      onclick="showPicker()"
+    >
+      Upload Image
+    </button>
+    <div class="upload-label">
+      <label id="upload-label">No file chosen</label>
+    </div>
+    <div class="text-center">
+      <img
+        id="image-picked"
+        class="no-display"
+        alt="Chosen Image"
+        height="180"
+      />
+    </div>
+    <button id="analyze-button" type="button" onclick="analyze()">
+      Analyze
+    </button> -->
+  </body>
+  <script>
+    var count = 0
+
+    async function analyze() {
+      // var img = el("file-input").files;
+      // const data = new FormData();
+      // data.append("file", img[0]);
+      // console.log("img" + img);
+      // const processedImage = await fetch("/analyze", {
+      //   method: "POST",
+      //   body: data,
+      // })
+      //   .then((response) => {
+      //     console.log(" Response : " + response);
+      //     //return response.json();
+      //   })
+      //   .then((result) => {
+      //     console.log(" Result : " + result["image"]);
+      //     //return result['image'];
+      //   });
+      count ++;
+      if(count%2==0){
+        console.log("Negative")
+        $("#success").hide()
+        $("#fail").show()
+      }else{
+        console.log("Positive")
+        $("#fail").hide()
+        $("#success").show()
+      }
+      
+    }
+
+    var el = (x) => document.getElementById(x);
+
+    function showPicker(inputId) {
+      el("file-input").click();
+    }
+
+    function showPicked(input) {
+      el("upload-label").innerHTML = input.files[0].name;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        el("image-picked").src = e.target.result;
+        el("image-picked").className = "";
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  </script>
+</html>
