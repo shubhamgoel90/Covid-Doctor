@@ -15,7 +15,7 @@ In the current scenario, there is a widespread of coronavirus in the entire worl
 
 ### Motivation
 
-In these difficult times everybody has to be causious for which they need to have a self assesment tool which they can use for scanning themselves anytime.
+In these difficult times, everybody has to be cautious for which they need to have a self-assessment tool which they can use for scanning themselves anytime.
 
 ### Services Offered By Covid Doctor
 
