@@ -11,18 +11,19 @@ In these difficult times everybody has to be causious for which they need to hav
 
 ### Screenshot
 
-![picture alt](static/images/1.png "Title is optional")
-![picture alt](static/images/2.png "Title is optional")
-![picture alt](static/images/3.png "Title is optional")
-![picture alt](static/images/4.png "Title is optional")
-![picture alt](static/images/5.png "Title is optional")
+![picture alt](static/images/1.png "Home Page")
+
+![picture alt](static/images/2.png "Services")
+
+![picture alt](static/images/4.png "Live Stats")
+
 ![picture alt](static/images/Pulse_Detection.png "Pulse Waveform")
-![picture alt](static/images/X_Ray_P.png "Title is optional")
-![picture alt](static/images/Prediction.png "Title is optional")
-![picture alt](static/images/X_Ray_N.png "Title is optional")
-![picture alt](static/images/Prediction_2.png "Title is optional")
-![picture alt](static/images/Self_Assessment_1.png "Title is optional")
-![picture alt](static/images/Self_Assessment_2.png "Title is optional")
+![picture alt](static/images/X_Ray_P.png "Covid Positive Xray Inputted")
+![picture alt](static/images/Prediction.png "Positive Prediction")
+![picture alt](static/images/X_Ray_N.png "Covid Negative Xray Inputted")
+![picture alt](static/images/Prediction_2.png "Negative Prediction")
+![picture alt](static/images/Self_Assessment_1.png "Self Assessment Chatbot")
+![picture alt](static/images/Self_Assessment_2.png "Self Assessment Chatbot")
 
 ### Tech Stack
 
