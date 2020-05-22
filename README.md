@@ -61,7 +61,7 @@ In these difficult times, everybody has to be cautious for which they need to ha
 
 ### Team Members
 
-1. <a href="https://www.linkedin.com/in/ankur-verma-0bb747154/">Ankur Vemra</a>
+1. <a href="https://www.linkedin.com/in/ankur-verma-0bb747154/">Ankur Verma</a>
 2. <a href="https://www.linkedin.com/in/kush-aggarwal-1b236717b/">Kush Aggarwal</a>
 3. <a href="https://www.linkedin.com/in/nitish-kumar-70ba97163/">Nitish Kumar</a>
 4. <a href="https://www.linkedin.com/in/shubham-goel-ml/">Shubham Goel</a>
