@@ -52,6 +52,13 @@ In these difficult times, everybody has to be cautious for which they need to ha
 - Flask for web deployment
 - HTML and CSS for web frontend
 
+### Steps To Run
+1. Install the Python 3
+2. RUN - pip install requirements.txt
+3. RUN - python app.py
+4. Then copy the localhost url (http://127.0.0.1:5000/) and paste it in the browser.
+
+
 ### Team Members
 
 1. <a href="https://www.linkedin.com/in/ankur-verma-0bb747154/">Ankur Vemra</a>
