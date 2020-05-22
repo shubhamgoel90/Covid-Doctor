@@ -16,6 +16,13 @@ In these difficult times everybody has to be causious for which they need to hav
 ![picture alt](static/images/3.png "Title is optional")
 ![picture alt](static/images/4.png "Title is optional")
 ![picture alt](static/images/5.png "Title is optional")
+![picture alt](static/images/Pulse_Detection.png "Pulse Waveform")
+![picture alt](static/images/X_Ray_P.png "Title is optional")
+![picture alt](static/images/Prediction.png "Title is optional")
+![picture alt](static/images/X_Ray_N.png "Title is optional")
+![picture alt](static/images/Prediction_2.png "Title is optional")
+![picture alt](static/images/Self_Assessment_1.png "Title is optional")
+![picture alt](static/images/Self_Assessment_2.png "Title is optional")
 
 ### Tech Stack
 
