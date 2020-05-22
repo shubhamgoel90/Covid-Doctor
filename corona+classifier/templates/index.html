@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>
+  corona_classification
+  </title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+.heading{
+	font-weight:500;
+	font-size: 4em;
+	text-shadow: 1px 1px 5px black;
+}
+.text{
+	font-size: 64px;
+	font-style: italic;
+}
+img{
+	height: 400%;
+	width: 100%;
+}
+
+
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+		   <div class="container">
+	         <h1  class='heading'> corona_classification </h1>
+	         <p> upload your image to predict whether person is positive or Not.... </p>
+	        </div>
+	    </div>     
+
+
+
+	    <form class="form-inline" method='POST' action='/' enctype='multipart/form-data'>
+
+	    	<label><b> Image: &nbsp; &nbsp; </b> </label>
+	        <input class="form-control" type='file' name='userfile' placeholder='your image'>
+	        <button type="submit" class="btn btn-primary"> Submit </button>
+	    </form>
+    
+	   <div class='row'>
+	   	  <div class="col-sm-4">	
+	   		<img src="{{my_image}}">
+	   		<br>
+	   	  </div>		
+	      <div class='col-sm-8'>
+	    	<p class="text"> Generated label: </p>
+	    	<p style="font-size:60px"> <b>	{{my_target}} </b> </p>
+
+	        </div>
+	    </div>       
+	</div>    
+</body>
+</html>
