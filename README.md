@@ -66,4 +66,8 @@ In these difficult times, everybody has to be cautious for which they need to ha
 3. <a href="https://www.linkedin.com/in/nitish-kumar-70ba97163/">Nitish Kumar</a>
 4. <a href="https://www.linkedin.com/in/shubham-goel-ml/">Shubham Goel</a>
 
+<b>
+This product is developed for the HackCovid Hackathon on HackerEarth
+</b>
 
+### <a href="https://www.hackerearth.com/challenges/hackathon/hackerearth-hackcovid/dashboard/fe9639a/team/">Team Neurons (HackerEarth Team Profile)</a>
