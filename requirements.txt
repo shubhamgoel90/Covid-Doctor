@@ -7,4 +7,4 @@ matplotlib==3.3.0
 feat==1.0.5
 numpy==1.19.1
 requests==2.24.0
-openmdao==3.2.0
+openmdao==3.2.1
