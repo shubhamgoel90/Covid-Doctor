@@ -1,4 +1,4 @@
-opencv_python==4.4.0.46
+opencv_python==4.5.1.48
 Werkzeug==1.0.1
 Flask==1.1.2
 Keras==2.4.3
