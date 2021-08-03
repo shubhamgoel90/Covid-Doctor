@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: openmdao
+    versions:
+    - 3.7.0
+  - dependency-name: numpy
+    versions:
+    - 1.20.0
+  - dependency-name: matplotlib
+    versions:
+    - 3.3.4
